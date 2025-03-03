@@ -43,7 +43,7 @@ const ContactForm = ({existingUser = {}, updateCallback}) => {
         </div>
         <div>
             <label htmlFor="email">Email: </label>
-            <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
         </div>
         <button type="submit">{updating ? "Update" : "Create"}</button>    
     </form>

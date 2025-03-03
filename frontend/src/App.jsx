@@ -41,9 +41,9 @@ function App() {
 
   return (
     <>
-      <UserList users={users} updateUser={openEditModal}  updateCallback={onUpdate}/>
+      <UserList users={users} updateUser={openEditModal} updateCallback={onUpdate}/>
       <button onClick={openCreateModal}>Create New User</button>
-      { isModalOpen && <div className="modal">
+      {isModalOpen && <div className="modal">
         <div className="modal-content">
           <span className="close" onClick={closeModal}>&times;</span>
           <ContactForm existingUser={currentUser} updateCallback={onUpdate}/>
